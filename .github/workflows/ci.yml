@@ -111,15 +111,10 @@ jobs:
 
   build_and_deploy:
       name: Build Website/PDF & Publish
-      needs: [build_torch, build_tf, build_jax, build_mxnet]
       if: |
         always() &&
         github.repository == 'flach/d2l-en' &&
-        !contains(github.event.head_commit.message, '[skip builder]') &&
-        (needs.build_torch.result == 'success' || needs.build_torch.result == 'skipped') &&
-        (needs.build_tf.result == 'success' || needs.build_tf.result == 'skipped') &&
-        (needs.build_jax.result == 'success' || needs.build_jax.result == 'skipped') &&
-        (needs.build_mxnet.result == 'success' || needs.build_mxnet.result == 'skipped')
+        !contains(github.event.head_commit.message, '[skip builder]') 
       runs-on: ubuntu-latest
       steps:
         - name: Checkout repository
