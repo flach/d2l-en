@@ -17,7 +17,7 @@ chapter_notation/index
 
 
 ```toc
-:maxdepth: 2
+:maxdepth: 3
 :numbered:
 
 chapter_introduction/index
