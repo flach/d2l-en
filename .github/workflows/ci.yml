@@ -1,6 +1,7 @@
 name: Continuous Integration
 
 on:
+  workflow_dispatch: # added by PF
   # Triggers the workflow on push or pull request events only for the specified branches
   push:
     branches:
