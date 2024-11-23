@@ -81,9 +81,9 @@ wget -O source-code-pro.zip https://www.fontsquirrel.com/fonts/download/source-c
 unzip source-code-pro -d source-code-pro
 sudo mv source-code-pro /usr/share/fonts/opentype/
 
-wget -O Inconsolata.zip https://www.fontsquirrel.com/fonts/download/Inconsolata
-unzip Inconsolata -d Inconsolata
-sudo mv Inconsolata /usr/share/fonts/opentype/
+wget -O inconsolata.zip https://www.fontsquirrel.com/fonts/download/inconsolata
+unzip inconsolata -d inconsolata
+sudo mv inconsolata /usr/share/fonts/opentype/
 
 sudo fc-cache -f -v
 
